@@ -1,5 +1,5 @@
 node {
-   def registryProjet='https://hub.docker.com/repository/docker/kilokilo8/app'
+   def registryProjet='hub.docker.com/repository/docker/kilokilo8/app'
    def IMAGE="${registryProjet}:version-${env.BUILD_ID}"
     stage('Clone') {
           checkout scm
