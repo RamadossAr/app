@@ -13,7 +13,7 @@ node {
           }
     }
     stage('Push') {
-          docker.withRegistry('', 'dockerhubcredentials') {
+          docker.withRegistry('', 'docker-hub-credentials') {
               img.push 'latest'
               img.push()
           }
